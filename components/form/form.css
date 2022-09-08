@@ -1,0 +1,25 @@
+.form {
+  padding: 10rem 6rem 8rem 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.form > * {
+  margin: 0 0 2rem;
+}
+
+.question-form {
+  width: 40em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.question-form__text {
+  height: 5em;
+}
+
+.question-form__label,
+.question-form__button {
+  margin-top: 2em;
+}
