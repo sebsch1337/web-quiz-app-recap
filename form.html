@@ -20,14 +20,22 @@
           name="question"
           id="question"
           data-js="question-text"
+          maxlength="150"
         ></textarea>
+        <p class="question-form__counter" data-js="question-text-counter">
+          150 characters left
+        </p>
         <label for="answer" class="question-form__label">Your answer:</label>
         <textarea
           class="question-form__text"
           name="answer"
           id="answer"
           data-js="answer-text"
+          maxlength="150"
         ></textarea>
+        <p class="question-form__counter" data-js="answer-text-counter">
+          150 characters left
+        </p>
         <label for="tag" class="question-form__label">Your tag:</label>
         <input type="text" name="tag" id="tag" data-js="tag-input" />
         <button

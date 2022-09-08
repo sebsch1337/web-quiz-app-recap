@@ -14,3 +14,8 @@
 .question-form__button {
   margin-top: 2em;
 }
+
+.question-form__counter {
+  text-align: right;
+  font-size: 0.7em;
+}

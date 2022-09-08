@@ -5,6 +5,22 @@ const questionText = document.querySelector("[data-js='question-text']");
 const answerText = document.querySelector("[data-js='answer-text']");
 const tag = document.querySelector("[data-js='tag-input']");
 const submitButton = document.querySelector("[data-js='submit-button']");
+const questionCounter = document.querySelector(
+  "[data-js='question-text-counter']"
+);
+const answerCounter = document.querySelector("[data-js='answer-text-counter']");
+
+function countCharacters(event) {
+  const counter = 150 - event.target.value.length;
+  if (event.target.dataset.js === "question-text") {
+    questionCounter.textContent = `${counter} characters left`;
+  } else {
+    answerCounter.textContent = `${counter} characters left`;
+  }
+}
+
+questionText.addEventListener("input", countCharacters);
+answerText.addEventListener("input", countCharacters);
 
 questionForm.addEventListener("submit", (event) => {
   event.preventDefault();
