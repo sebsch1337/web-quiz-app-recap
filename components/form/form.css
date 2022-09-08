@@ -1,0 +1,21 @@
+.question-form {
+  padding: 10rem 6rem 8rem 6rem;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.question-form__text {
+  height: 5em;
+}
+
+.question-form__label,
+.question-form__button {
+  margin-top: 2em;
+}
+
+.question-form__counter {
+  text-align: right;
+  font-size: 0.7em;
+}
